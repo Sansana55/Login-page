@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form id="loginForm">
+       <div class="logo-container">
+      <img src="nichias-logo.png" alt="Logo" class="logo">
+      <h1>Login to your account</h1>
+      
+      <div class="input-group">
+        <input type="tel" id="phone" name="phone" placeholder="+91 phone number" required>
+      </div>
+      <div class="input-group">
+       
+        <input type="password" id="password" name="password" placeholder="password" required>
+      </div>
+       <button type="submit">Login</button>
+      <p class="error-message" id="error"></p>
+    </form>
+  </div>
+  
+  <script>
+    const form = document.getElementById('loginForm');
+    const errorElement = document.getElementById('error');
+    
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const phone = form['phone'].value;
+      const password = form['password'].value;
+      
+      // Perform validation
+      if (phone.trim() === '' || password.trim() === '') {
+        errorElement.textContent = 'Please enter both phone number and password.';
+        return;
+      }
+      
+      // You can add further validation or send login request here
+      // For simplicity, let's assume login is successful
+      alert('Login successful!');
+      
+      // Clear error message
+      errorElement.textContent = '';
+    });
+  </script>
+</body>
+</html>

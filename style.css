@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.container {
+ 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: blue;
+}
+
+.container h1 {
+  margin-top: 0;
+    color:rgb(13, 13, 215); /* Change the color to sky blue */
+    font-size:20px;
+    justify-content: center;
+     align-items: center;
+     padding-left: 120px; /* Minimize the size */
+  }
+  .container img{
+    width:300px;
+    height: auto;
+    padding-bottom: 0px;
+    align-items:center;
+    padding-left: 80px;
+
+ 
+  }
+
+  .input-group {
+    margin-left: auto; /* Move the input boxes to the right */
+    width: 100%; /* Adjust the width as needed */
+    margin-bottom:20px;
+    padding-right:10px;
+  }
+  
+
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-color: rgb(7, 221, 221);
+  border-radius: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+ 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+button[type="submit"] {
+  width: 60%; /* Adjust width as needed */
+  margin:  auto; /* Center horizontally */
+  display: block; /* Ensure it takes up the full width */
+  padding: 15px;
+  
+  background-color: #007bff;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: auto;
+
+}
+
+button[type="submit"] {
+  width: 80%; /* Take up full width of its container */
+  padding: 15px;
+  background-color: #007bff;
+  color:#fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Move the button to the right */
+  display: block; /* Ensure it takes up the full width */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; 
+ /* Darker shade of blue on hover */
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo-container {
+  text-align: center; /* Center the content horizontally */
+}
+
+.logo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+   margin-bottom:10px;
+}
+
+h1 {
+  margin-top: 20px; /* Adjust spacing between logo and heading */
+}
+.logo-container {
+  text-align: left; /* Move the image to the left */
+}
